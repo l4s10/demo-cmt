@@ -1,0 +1,69 @@
+/* Estilos para la sección Products */
+.products-section {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #4F4D49; /* Fondo negro */
+    color: #D7D0C5; /* Letras avena */
+}
+
+/* Sección principal */
+.products-section .main-section {
+    padding: 20px;
+    text-align: center;
+}
+
+.products-section .main-section h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #AC8936; /* Dorado */
+}
+
+/* Galería */
+.products-section .gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.products-section .product-card {
+    background-color: #333;
+    border-radius: 10px;
+    padding: 10px;
+    width: 300px;
+    text-align: center;
+}
+
+.products-section .product-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    border: 2px solid #D7D0C5; /* Borde avena */
+    transition: transform 0.3s;
+}
+
+.products-section .product-card img:hover {
+    transform: scale(1.1);
+}
+
+.products-section .product-card h3 {
+    color: #AC8936; /* Dorado */
+    margin: 10px 0;
+}
+
+.products-section .product-card p {
+    color: #D7D0C5; /* Letras avena */
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+    .products-section .main-section h2 {
+        font-size: 1.5em;
+    }
+
+    .products-section .product-card {
+        width: 100%;
+    }
+}

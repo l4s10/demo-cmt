@@ -1,0 +1,75 @@
+/* Estilos para la sección Contact */
+.contact-section {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #4F4D49; /* Fondo negro */
+    color: #D7D0C5; /* Letras avena */
+}
+
+/* Sección principal */
+.contact-section .main-section {
+    padding: 20px;
+    text-align: center;
+}
+
+.contact-section .main-section h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #AC8936; /* Dorado */
+}
+
+.contact-section .main-section p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    color: #D7D0C5; /* Letras avena */
+}
+
+.contact-section .main-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.contact-section .main-section ul li {
+    font-size: 1.2em;
+    margin: 10px 0;
+    color: #D7D0C5; /* Letras avena */
+}
+
+/* Botón de contacto */
+.contact-button {
+    background-color: #AC8936; /* Dorado */
+    color: #4F4D49; /* Letras negras */
+    border: none;
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    margin-top: 20px;
+}
+
+.contact-button:hover {
+    background-color: #e6b800; /* Dorado más oscuro */
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+    .contact-section .main-section h2 {
+        font-size: 1.5em;
+    }
+
+    .contact-section .main-section p,
+    .contact-section .main-section ul li {
+        font-size: 1em;
+    }
+}
+
+/* Estilos para el pie de página */
+.footer {
+    background-color: #4F4D49; /* Fondo negro */
+    color: #D7D0C5; /* Letras avena */
+    text-align: center;
+    padding: 20px 0;
+    width: 100%;
+}

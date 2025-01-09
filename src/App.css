@@ -1,0 +1,41 @@
+/* Estilos globales */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  font-family: 'Arial', sans-serif;
+  background-color: #D7D0C5; /* Fondo blanco avena */
+  color: #4F4D49; /* Letras negras */
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Asegurarse de que el contenido ocupe toda la pantalla */
+.main-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Asegurarse de que las secciones ocupen toda la pantalla */
+.home-section, .products-section, .works-section, .contact-section {
+  flex: 1;
+}
+
+/* Pie de página */
+.footer {
+  background-color: #4F4D49; /* Fondo negro */
+  color: #D7D0C5; /* Letras avena */
+  text-align: center;
+  padding: 10px 0;
+  width: 100%;
+}

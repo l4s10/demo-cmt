@@ -1,0 +1,8 @@
+/* Estilos para el pie de página */
+.footer {
+    background-color: #333; /* Fondo negro */
+    color: #D7D0C5; /* Letras avena */
+    text-align: center;
+    padding: 20px 0;
+    width: 100%;
+}
