@@ -4,16 +4,16 @@ import {BrowserRouter, Routes, Route} from "react-router";
 import 'bootstrap/dist/css/bootstrap.min.css';
 // import './index.css'
 import App from './App.tsx'
-import Contact from './pages/contact/Contact.jsx'
-import Products from './pages/products/Products.jsx'
-import Works from './pages/works/Works.jsx'
+import AllProducts from './pages/products/AllProducts.jsx'
+import AllWorks from './pages/works/AllWorks.jsx'
+import Contact from './pages/contact/LandingContact.jsx'
 
 createRoot(document.getElementById('root')!).render(
     <BrowserRouter>
         <Routes>
             <Route path="/" element={<App />} />
-            <Route path="/productos" element={<Products />} />
-            <Route path="/trabajos" element={<Works />} />
+            <Route path="/productos" element={<AllProducts />} />
+            <Route path="/trabajos" element={<AllWorks />} />
             <Route path='/contacto' element={<Contact/>} />
         </Routes>
     </BrowserRouter>

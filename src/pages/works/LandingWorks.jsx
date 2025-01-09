@@ -1,5 +1,5 @@
 import React from 'react';
-import './Works.css';
+import './LandingWorks.css';
 
 const works = [
     {
@@ -26,7 +26,7 @@ const Works = () => {
     return (
         <div id="trabajos" className="works-section">
             <div className="main-section">
-                <h2>Trabajos Realizados</h2>
+                <h2>Proyectos completados</h2>
                 <div className="gallery">
                     {works.map(work => (
                         <div key={work.id} className="work-card">

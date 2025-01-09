@@ -1,5 +1,6 @@
 import React from 'react';
-import './Products.css';
+import './LandingProducts.css';
+import { Link } from 'react-router';
 
 const products = [
     {

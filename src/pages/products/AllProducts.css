@@ -1,0 +1,40 @@
+.all-products-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    justify-content: center; /* Centra las tarjetas */
+}
+
+.all-products-card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.2s ease-in-out;
+    flex: 1; /* Asegura que las tarjetas ocupen el mismo espacio */
+}
+
+.all-products-card:hover {
+    transform: scale(1.05);
+}
+
+.all-products-card img {
+    width: 100%;
+    height: auto;
+    display: block; /* Asegura que las imágenes no tengan espacio extra debajo */
+}
+
+.mb-4 {
+    margin-bottom: 1.5rem;
+}
+
+.all-products-section {
+    padding: 20px;
+}
+
+.all-products-main {
+    text-align: center;
+}
+
+.all-products-search-bar {
+    margin-bottom: 1.5rem;
+}

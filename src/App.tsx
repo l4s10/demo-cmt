@@ -5,10 +5,9 @@ import './App.css'
 import './pages/home/Home.css'
 import Navbar from './components/navbar/Navbar'
 import Home from './pages/home/Home'
-import Products from './pages/products/Products'
-import Works from './pages/works/Works'
-import Contact from './pages/contact/Contact'
-import Footer from './components/footer/Footer'
+import Products from './pages/products/LandingProducts'
+import Works from './pages/works/LandingWorks'
+import Contact from './pages/contact/LandingContact'
 
 function App() {
   // const [count, setCount] = useState(0)
