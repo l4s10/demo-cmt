@@ -1,5 +1,6 @@
 import React from 'react';
 import './Home.css';
+import CarrouselComponent from '../../components/carrousel/CarouselComponent';
 
 const Home = () => {
     return (
@@ -9,11 +10,12 @@ const Home = () => {
                 <p>
                     Ofrecemos las mejores decoraciones para tu hogar.
                 </p>
-                <div className="gallery">
+                {/* <div className="gallery">
                     <img src="https://via.placeholder.com/300x200" alt="Decoración 1" />
                     <img src="https://via.placeholder.com/300x200" alt="Decoración 2" />
                     <img src="https://via.placeholder.com/300x200" alt="Decoración 3" />
-                </div>
+                </div> */}
+                <CarrouselComponent />
             </div>
         </div>
     );

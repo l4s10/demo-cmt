@@ -1,5 +1,5 @@
 .navbar {
-    background-color: #333; /* Fondo negro */
+    background-color: #4F4D49; /* Fondo negro */
     padding: 20px;
     display: flex;
     justify-content: space-between;
@@ -92,5 +92,28 @@
 
     .navbar-burger {
         display: flex;
+    }
+
+    .navbar-brand a {
+        font-size: 1.2em; /* Ajustar tamaño de fuente en pantallas pequeñas */
+    }
+
+    .navbar-item a {
+        font-size: 1.2em; /* Ajustar tamaño de fuente en pantallas pequeñas */
+    }
+}
+
+/* Ajustes adicionales para pantallas muy pequeñas */
+@media (max-width: 480px) {
+    .navbar-brand a {
+        font-size: 1em; /* Ajustar tamaño de fuente en pantallas muy pequeñas */
+    }
+
+    .navbar-item a {
+        font-size: 1em; /* Ajustar tamaño de fuente en pantallas muy pequeñas */
+    }
+
+    .navbar-burger {
+        display: flex; /* Asegurarse de que el botón de hamburguesa siempre esté visible */
     }
 }
