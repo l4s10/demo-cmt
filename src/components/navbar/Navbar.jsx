@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router';
+import { motion } from 'framer-motion';
 import './Navbar.css';
 
 const Navbar = () => {
@@ -10,7 +11,12 @@ const Navbar = () => {
     };
 
     return (
-        <nav className="navbar">
+        <motion.nav
+            className="navbar"
+            initial={{ y: -100 }}
+            animate={{ y: 0 }}
+            transition={{ duration: 0.5 }}
+        >
             <div className="navbar-brand">
                 <Link to="/">CMT Cielos Modulares y Terminaciones</Link>
             </div>
@@ -27,7 +33,7 @@ const Navbar = () => {
                 <span></span>
                 <span></span>
             </div>
-        </nav>
+        </motion.nav>
     );
 }
 
