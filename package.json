@@ -9,6 +9,8 @@
     "lint": "eslint .",
     "preview": "vite preview"
   },
+
+  "homepage": "https://koshystudios.com",
   "dependencies": {
     "bootstrap": "^5.3.3",
     "framer-motion": "^11.16.7",
