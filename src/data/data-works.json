@@ -1,0 +1,86 @@
+[
+    {
+        "id": 1,
+        "titulo": "Trabajo 1",
+        "descripcion": "Descripción de trabajo 1",
+        "urlImagen": "/images/trabajos/trabajo1.jpeg",
+        "fecha": "13-01-2025"
+    },
+    {
+        "id": 2,
+        "titulo": "Trabajo 2",
+        "descripcion": "Descripción de trabajo 2",
+        "urlImagen": "/images/trabajos/trabajo2.jpeg",
+        "fecha": "14-02-2025"
+    },
+    {
+        "id": 3,
+        "titulo": "Trabajo 3",
+        "descripcion": "Descripción de trabajo 3",
+        "urlImagen": "/images/trabajos/trabajo3.jpeg",
+        "fecha": "15-03-2025"
+    },
+    {
+        "id": 4,
+        "titulo": "Trabajo 4",
+        "descripcion": "Descripción de trabajo 4",
+        "urlImagen": "/images/trabajos/trabajo4.jpeg",
+        "fecha": "16-04-2025"
+    },
+    {
+        "id": 5,
+        "titulo": "Trabajo 5",
+        "descripcion": "Descripción de trabajo 5",
+        "urlImagen": "/images/trabajos/trabajo5.jpeg",
+        "fecha": "17-05-2025"
+    },
+    {
+        "id": 6,
+        "titulo": "Trabajo 6",
+        "descripcion": "Descripción de trabajo 6",
+        "urlImagen": "/images/trabajos/trabajo6.jpeg",
+        "fecha": "18-06-2025"
+    },
+    {
+        "id": 7,
+        "titulo": "Trabajo 7",
+        "descripcion": "Descripción de trabajo 7",
+        "urlImagen": "/images/trabajos/trabajo7.jpeg",
+        "fecha": "19-07-2025"
+    },
+    {
+        "id": 8,
+        "titulo": "Trabajo 8",
+        "descripcion": "Descripción de trabajo 8",
+        "urlImagen": "/images/trabajos/trabajo8.jpeg",
+        "fecha": "20-08-2025"
+    },
+    {
+        "id": 9,
+        "titulo": "Trabajo 9",
+        "descripcion": "Descripción de trabajo 9",
+        "urlImagen": "/images/trabajos/trabajo9.jpeg",
+        "fecha": "21-09-2025"
+    },
+    {
+        "id": 10,
+        "titulo": "Trabajo 10",
+        "descripcion": "Descripción de trabajo 10",
+        "urlImagen": "/images/trabajos/trabajo10.jpeg",
+        "fecha": "22-10-2025"
+    },
+    {
+        "id": 11,
+        "titulo": "Trabajo 11",
+        "descripcion": "Descripción de trabajo 11",
+        "urlImagen": "/images/trabajos/trabajo11.jpeg",
+        "fecha": "23-11-2025"
+    },
+    {
+        "id": 12,
+        "titulo": "Trabajo 12",
+        "descripcion": "Descripción de trabajo 12",
+        "urlImagen": "/images/trabajos/trabajo12.jpeg",
+        "fecha": "24-12-2025"
+    }
+]

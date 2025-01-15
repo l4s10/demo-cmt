@@ -1,0 +1,42 @@
+[
+    {
+        "id": 1,
+        "nombre": "Cielo Americano",
+        "descripcion": "Un producto decorativo elegante y duradero.",
+        "fotoProducto": "/images/cielo_americano.jpg",
+        "tipos": [
+            {
+                "color": {
+                    "nombreColor": "Blanco",
+                    "fotoColor": "/images/cielo_blanco.jpg"
+                }
+            },
+            {
+                "color": {
+                    "nombreColor": "Negro",
+                    "fotoColor": "/images/cielo_negro.jpg"
+                }
+            }
+        ]
+    },
+    {
+        "id": 2,
+        "nombre": "Eco Caucho",
+        "descripcion": "Material ecológico ideal para exteriores.",
+        "fotoProducto": "/images/ecocaucho.jpg",
+        "tipos": [
+            {
+                "color": {
+                    "nombreColor": "Verde",
+                    "fotoColor": "/images/ecocaucho_verde.jpg"
+                }
+            },
+            {
+                "color": {
+                    "nombreColor": "Gris",
+                    "fotoColor": "/images/ecocaucho_gris.jpg"
+                }
+            }
+        ]
+    }
+]
