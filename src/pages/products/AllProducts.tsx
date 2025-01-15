@@ -1,8 +1,8 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { Helmet } from 'react-helmet';
 import { Card, Form, Container, Row, Col } from 'react-bootstrap';
 import './AllProducts.css';
-import NavBar from '../../components/navbar/NavBar';
+import NavBar from '../../components/navbar/Navbar';
 
 const products = [
     {

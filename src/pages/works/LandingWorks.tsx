@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import { Modal, Button } from 'react-bootstrap';
@@ -14,10 +14,10 @@ const LandingWorks = () => {
     // Estado para controlar el modal
     const [showModal, setShowModal] = useState(false);
     // Estado para almacenar la imagen seleccionada
-    const [selectedImage, setSelectedImage] = useState(null);
+    const [selectedImage, setSelectedImage] = useState<string | null>(null);
 
     // Función para abrir el modal con la imagen seleccionada
-    const handleImageClick = (image) => {
+    const handleImageClick = (image: string) => {
         setSelectedImage(image);
         setShowModal(true);
     };

@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { Helmet } from 'react-helmet';
 import { Container, Row, Col, Form, Modal, Button, Card } from 'react-bootstrap';
 import worksData from '../../data/data-works.json';
@@ -12,7 +12,7 @@ const AllWorks = () => {
     // Estado para controlar el modal
     const [showModal, setShowModal] = useState(false);
     // Estado para almacenar la imagen seleccionada
-    const [selectedImage, setSelectedImage] = useState(null);
+    const [selectedImage, setSelectedImage] = useState<string | null>(null);
 
     // Filtrar trabajos según el término de búsqueda
     const filteredWorks = worksData.filter(work =>
@@ -20,7 +20,7 @@ const AllWorks = () => {
     );
 
     // Función para abrir el modal con la imagen seleccionada
-    const handleImageClick = (image) => {
+    const handleImageClick = (image: string) => {
         setSelectedImage(image);
         setShowModal(true);
     };
