@@ -8,7 +8,7 @@ const CarouselComponent = () => {
             <Carousel.Item>
                 <img
                     className="d-block w-100"
-                    src="https://via.placeholder.com/800x400?text=Decoración+1"
+                    src="https://placehold.co/600x400?text=Decoración+1"
                     alt="Decoración 1"
                 />
                 <Carousel.Caption>
@@ -19,7 +19,7 @@ const CarouselComponent = () => {
             <Carousel.Item>
                 <img
                     className="d-block w-100"
-                    src="https://via.placeholder.com/800x400?text=Decoración+2"
+                    src="https://placehold.co/600x400?text=Decoración+2"
                     alt="Decoración 2"
                 />
                 <Carousel.Caption>
@@ -30,7 +30,7 @@ const CarouselComponent = () => {
             <Carousel.Item>
                 <img
                     className="d-block w-100"
-                    src="https://via.placeholder.com/800x400?text=Decoración+3"
+                    src="https://placehold.co/600x400?text=Decoración+3"
                     alt="Decoración 3"
                 />
                 <Carousel.Caption>

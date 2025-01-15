@@ -1,4 +1,5 @@
 import React from 'react';
+import { Helmet } from 'react-helmet';
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import './Home.css';
@@ -12,6 +13,9 @@ const Home = () => {
 
     return (
         <div className="home-section">
+            <Helmet>
+                <title>Home - CMT</title>
+            </Helmet>
             <motion.div
                 className="main-section"
                 initial={{ opacity: 0, y: 50 }}

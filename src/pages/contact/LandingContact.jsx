@@ -22,11 +22,11 @@ const Contact = () => {
                 <h2>Contacto</h2>
                 <p>Para más información, contáctanos a través de los siguientes medios:</p>
                 <ul>
-                    <li>Teléfono: +56 9 1234 5678</li>
-                    <li>Email: info@decoraciones.com</li>
-                    <li>Dirección: Calle Falsa 123, Ciudad, País</li>
+                    <li>Teléfono: +56 9 7611 5563</li>
+                    <li>Email: cmtterminaciones@gmail.com</li>
+                    <li>Dirección: Paicaví 1880, 4060598 Concepción, Bío Bío, Chile</li>
                 </ul>
-                <a href="mailto:info@decoraciones.com" target="_blank" rel="noopener noreferrer">
+                <a href="mailto:cmtterminaciones@gmail.com" target="_blank" rel="noopener noreferrer">
                     <button className="contact-button">Enviar Email</button>
                 </a>
             </motion.div>

@@ -18,7 +18,7 @@ const Navbar = () => {
             transition={{ duration: 0.5 }}
         >
             <div className="navbar-brand">
-                <Link to="/">CMT Cielos Modulares y Terminaciones</Link>
+                <Link to="/">CMT Terminaciones</Link>
             </div>
             <div className={`navbar-menu ${isOpen ? 'is-active' : ''}`}>
                 <ul className="navbar-list">

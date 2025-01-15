@@ -1,56 +1,46 @@
 import React, { useState } from 'react';
-import { Card, Form, Container, Row, Col } from 'react-bootstrap';
-import { Link } from 'react-router';
+import { Helmet } from 'react-helmet';
+import { Container, Row, Col, Form, Modal, Button, Card } from 'react-bootstrap';
+import worksData from '../../data/data-works.json';
+import NavBar from '../../components/navbar/Navbar';
 import './AllWorks.css';
-import NavBar from '../../components/navbar/NavBar';
-
-const works = [
-    {
-        id: 1,
-        title: 'Trabajo 1',
-        description: 'Descripción del trabajo 1',
-        image: 'https://via.placeholder.com/300x200'
-    },
-    {
-        id: 2,
-        title: 'Trabajo 2',
-        description: 'Descripción del trabajo 2',
-        image: 'https://via.placeholder.com/300x200'
-    },
-    {
-        id: 3,
-        title: 'Trabajo 3',
-        description: 'Descripción del trabajo 3',
-        image: 'https://via.placeholder.com/300x200'
-    },
-    {
-        id: 4,
-        title: 'Trabajo 4',
-        description: 'Descripción del trabajo 4',
-        image: 'https://via.placeholder.com/300x200'
-    },
-    {
-        id: 5,
-        title: 'Trabajo 5',
-        description: 'Descripción del trabajo 5',
-        image: 'https://via.placeholder.com/300x200'
-    },
-];
 
 const AllWorks = () => {
+    // ** Hooks **
+    // Estado para almacenar el término de búsqueda
     const [searchTerm, setSearchTerm] = useState('');
+    // Estado para controlar el modal
+    const [showModal, setShowModal] = useState(false);
+    // Estado para almacenar la imagen seleccionada
+    const [selectedImage, setSelectedImage] = useState(null);
 
-    const filteredWorks = works.filter(work =>
-        work.title.toLowerCase().includes(searchTerm.toLowerCase())
+    // Filtrar trabajos según el término de búsqueda
+    const filteredWorks = worksData.filter(work =>
+        work.titulo.toLowerCase().includes(searchTerm.toLowerCase())
     );
+
+    // Función para abrir el modal con la imagen seleccionada
+    const handleImageClick = (image) => {
+        setSelectedImage(image);
+        setShowModal(true);
+    };
+
+    // Función para cerrar el modal
+    const handleCloseModal = () => {
+        setShowModal(false);
+        setSelectedImage(null);
+    };
 
     return (
         <>
-            <NavBar/>
+            <Helmet>
+                <title>Trabajos Realizados - CMT</title>
+            </Helmet>
+            <NavBar />
             <Container className="all-works-section">
                 <Row className="all-works-main">
                     <Col>
-                        <h2>Proyectos Completados</h2>
+                        <h2>Trabajos Realizados</h2>
                         <Form.Control
                             type="text"
                             placeholder="Buscar trabajos..."
@@ -62,20 +52,44 @@ const AllWorks = () => {
                 </Row>
                 <Row className="all-works-gallery justify-content-center">
                     {filteredWorks.map(work => (
-                        <Col key={work.id} xs={12} sm={6} md={4} lg={3} className="mb-4 d-flex">
-                            <Card className="all-works-card">
-                                <Card.Img variant="top" src={work.image} />
+                        <Col key={work.id} md={4} className="mb-4">
+                            <Card className="work-item">
+                                <Card.Img
+                                    variant="top"
+                                    src={work.urlImagen}
+                                    alt={work.titulo}
+                                    onClick={() => handleImageClick(work.urlImagen)}
+                                    style={{ cursor: 'pointer' }}
+                                />
                                 <Card.Body>
-                                    <Card.Title>{work.title}</Card.Title>
-                                    <Card.Text>{work.description}</Card.Text>
+                                    <Card.Title>{work.titulo}</Card.Title>
+                                    <Card.Text>{work.descripcion}</Card.Text>
                                 </Card.Body>
+                                <Card.Footer>
+                                    <small className="text-muted">Realizado el día: {work.fecha}</small>
+                                </Card.Footer>
                             </Card>
                         </Col>
                     ))}
                 </Row>
             </Container>
+
+            {/* Modal para mostrar la imagen en grande */}
+            <Modal show={showModal} onHide={handleCloseModal} centered>
+                <Modal.Header closeButton>
+                    <Modal.Title>Imagen del Trabajo</Modal.Title>
+                </Modal.Header>
+                <Modal.Body>
+                    {selectedImage && <img src={selectedImage} alt="Trabajo" className="img-fluid" />}
+                </Modal.Body>
+                <Modal.Footer>
+                    <Button variant="secondary" onClick={handleCloseModal}>
+                        Cerrar
+                    </Button>
+                </Modal.Footer>
+            </Modal>
         </>
     );
-}
+};
 
 export default AllWorks;

@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Helmet } from 'react-helmet';
 import { Card, Form, Container, Row, Col } from 'react-bootstrap';
 import './AllProducts.css';
 import NavBar from '../../components/navbar/NavBar';
@@ -45,11 +46,15 @@ const AllProducts = () => {
 
     return (
         <>
+            <Helmet>
+                <title>Nuestros Productos - CMT</title>
+            </Helmet>
+
             <NavBar/>
             <Container className="all-products-section">
                 <Row className="all-products-main">
                     <Col>
-                        <h2>Todos los Productos</h2>
+                        <h2>Nuestros Productos</h2>
                         <Form.Control
                             type="text"
                             placeholder="Buscar productos..."
