@@ -25,7 +25,7 @@ const Navbar = () => {
                     <li className="navbar-item"><a href="/">Home</a></li>
                     <li className="navbar-item"><a href="/productos">Productos</a></li>
                     <li className="navbar-item"><a href="/trabajos">Trabajos</a></li>
-                    <li className="navbar-item"><a href="#contacto">Contacto</a></li>
+                    <li className="navbar-item"><a href="/contacto">Contacto</a></li>
                 </ul>
             </div>
             <div className="navbar-burger" onClick={toggleMenu}>

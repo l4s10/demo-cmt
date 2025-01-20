@@ -8,6 +8,7 @@ import Home from './pages/home/Home'
 import Products from './pages/products/LandingProducts'
 import Works from './pages/works/LandingWorks'
 import Contact from './pages/contact/LandingContact'
+import Footer from './components/footer/Footer'
 
 function App() {
   // const [count, setCount] = useState(0)
@@ -25,6 +26,8 @@ function App() {
         <Works/>
         {/* Llamar al componente Contact */}
         <Contact/>
+        {/* LLamar al footer */}
+        <Footer/>
       </div>
     </>
   )

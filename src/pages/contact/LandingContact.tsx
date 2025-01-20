@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import './LandingContact.css';
-import Footer from '../../components/footer/Footer';
+// import Footer from '../../components/footer/Footer';
 
 const Contact = () => {
     const { ref, inView } = useInView({
@@ -29,7 +29,6 @@ const Contact = () => {
                     <button className="contact-button">Enviar Email</button>
                 </a>
             </motion.div>
-            <Footer />
         </div>
     );
 }
