@@ -9,31 +9,31 @@ const products = [
         id: 1,
         name: 'Producto 1',
         description: 'Descripción del producto 1',
-        image: 'https://via.placeholder.com/300x200'
+        image: "https://placehold.co/600x400?text=Producto+1"
     },
     {
         id: 2,
         name: 'Producto 2',
         description: 'Descripción del producto 2',
-        image: 'https://via.placeholder.com/300x200'
+        image: "https://placehold.co/600x400?text=Producto+2"
     },
     {
         id: 3,
         name: 'Producto 3',
         description: 'Descripción del producto 3',
-        image: 'https://via.placeholder.com/300x200'
+        image: "https://placehold.co/600x400?text=Producto+3"
     },
     {
         id: 4,
         name: 'Producto 4',
         description: 'Descripción del producto 4',
-        image: 'https://via.placeholder.com/300x200'
+        image: "https://placehold.co/600x400?text=Producto+4"
     },
     {
         id: 5,
         name: 'Producto 5',
         description: 'Descripción del producto 5',
-        image: 'https://via.placeholder.com/300x200'
+        image: "https://placehold.co/600x400?text=Producto+5"
     },
 ];
 
@@ -65,17 +65,23 @@ const AllProducts = () => {
                     </Col>
                 </Row>
                 <Row className="all-products-gallery justify-content-center">
-                    {filteredProducts.map(product => (
-                        <Col key={product.id} xs={12} sm={6} md={4} lg={3} className="mb-4 d-flex">
-                            <Card className="all-products-card">
-                                <Card.Img variant="top" src={product.image} />
-                                <Card.Body>
-                                    <Card.Title>{product.name}</Card.Title>
-                                    <Card.Text>{product.description}</Card.Text>
-                                </Card.Body>
-                            </Card>
+                    {filteredProducts.length > 0 ? (
+                        filteredProducts.map(product => (
+                            <Col key={product.id} xs={12} sm={6} md={4} lg={3} className="mb-4 d-flex">
+                                <Card className="all-products-card">
+                                    <Card.Img variant="top" src={product.image} />
+                                    <Card.Body>
+                                        <Card.Title>{product.name}</Card.Title>
+                                        <Card.Text>{product.description}</Card.Text>
+                                    </Card.Body>
+                                </Card>
+                            </Col>
+                        ))
+                    ) : (
+                        <Col className="text-center">
+                            <p className="no-results-message">No se encontraron productos.</p>
                         </Col>
-                    ))}
+                    )}
                 </Row>
             </Container>
         </>

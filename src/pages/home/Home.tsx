@@ -22,10 +22,6 @@ const Home = () => {
                 transition={{ duration: 1 }}
                 ref={ref}
             >
-                {/* <h2>Bienvenido a CMT</h2>
-                <p>
-                    Ofrecemos las mejores decoraciones para tu hogar.
-                </p> */}
                 <CarouselComponent />
             </motion.div>
         </div>

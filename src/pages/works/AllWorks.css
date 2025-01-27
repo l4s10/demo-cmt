@@ -3,45 +3,83 @@
     padding: 20px;
 }
 
-.all-works-main {
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-.all-works-search-bar {
-    width: 100%;
-    margin-bottom: 1.5rem;
-}
-
 .all-works-gallery {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    background-color: #4F4D49; /* Fondo negro */
+    padding: 20px; /* Padding interno */
+    border-radius: 8px; /* Bordes redondeados */
+    margin-top: 20px; /* Espacio superior */
 }
 
+/* Estilos para el título */
+.all-works-gallery h2 {
+    color: #AC8936; /* Título dorado */
+    margin-bottom: 20px; /* Espacio inferior */
+}
+
+/* Estilos para la barra de búsqueda */
+.all-works-search-bar {
+    background-color: #D7D0C5; /* Fondo avena */
+    color: #4F4D49; /* Texto negro */
+    border: 1px solid #AC8936; /* Borde dorado */
+    border-radius: 4px; /* Bordes redondeados */
+    padding: 10px; /* Padding interno */
+    width: 100%; /* Ancho completo */
+    margin-bottom: 20px; /* Espacio inferior */
+}
+
+.all-works-search-bar::placeholder {
+    color: #4F4D49; /* Color del placeholder */
+}
+
+/* Estilos para las tarjetas de trabajos */
 .work-item {
-    text-align: center;
-    overflow: hidden;
+    background-color: #D7D0C5; /* Fondo avena */
+    color: #4F4D49; /* Texto negro */
+    border: 1px solid #AC8936; /* Borde dorado */
+    border-radius: 8px; /* Bordes redondeados */
+    padding: 10px; /* Padding interno */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra */
     transition: transform 0.2s ease-in-out;
-    flex: 1; /* Asegura que las tarjetas ocupen el mismo espacio */
-    border: 1px solid #ddd; /* Añadir borde */
-    border-radius: 8px; /* Añadir borde redondeado */
-    padding: 10px; /* Añadir padding */
-    background-color: #fff; /* Fondo blanco */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Añadir sombra */
 }
 
 .work-item:hover {
-    transform: scale(1.05);
+    transform: scale(1.05); /* Efecto de escala al hacer hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Sombra más pronunciada al hacer hover */
 }
 
+.work-item .card-title {
+    color: #AC8936; /* Título dorado */
+}
+
+.work-item .card-footer {
+    background-color: #AC8936; /* Fondo dorado */
+    color: #D7D0C5; /* Texto avena */
+    border-top: 1px solid #AC8936; /* Borde superior dorado */
+}
+
+/* Estilos para el mensaje de "No se encontraron trabajos" */
+.no-results-message {
+    color: #4F4D49; /* Color del texto */
+    font-size: 1.2rem; /* Tamaño de la fuente */
+    font-weight: bold; /* Texto en negrita */
+    margin-top: 20px; /* Espacio superior */
+    padding: 20px; /* Padding interno */
+    background-color: #D7D0C5; /* Fondo avena */
+    border-radius: 8px; /* Bordes redondeados */
+    border: 1px solid #AC8936; /* Borde dorado */
+}
 .work-item img {
     width: 100%;
-    height: auto;
-    display: block; /* Asegura que las imágenes no tengan espacio extra debajo */
-    border-radius: 8px; /* Añadir borde redondeado a la imagen */
+    height: 300px;
+    object-fit: cover;
+    border-radius: 8px;
 }
 
+@media (max-width: 768px) {
+    .work-item {
+        flex: 1 1 100%;
+    }
+}
 .mb-4 {
     margin-bottom: 1.5rem;
 }

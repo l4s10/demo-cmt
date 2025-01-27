@@ -38,39 +38,46 @@ const AllWorks = () => {
             </Helmet>
             <NavBar />
             <Container className="all-works-section">
-                <Row className="all-works-main">
-                    <Col>
+                <Row className="all-works-gallery justify-content-center">
+                    {/* Título y barra de búsqueda */}
+                    <Col xs={12} className="text-center mb-4">
                         <h2>Trabajos Realizados</h2>
                         <Form.Control
                             type="text"
                             placeholder="Buscar trabajos..."
                             value={searchTerm}
                             onChange={(e) => setSearchTerm(e.target.value)}
-                            className="all-works-search-bar mb-4"
+                            className="all-works-search-bar"
                         />
                     </Col>
-                </Row>
-                <Row className="all-works-gallery justify-content-center">
-                    {filteredWorks.map(work => (
-                        <Col key={work.id} md={4} className="mb-4">
-                            <Card className="work-item">
-                                <Card.Img
-                                    variant="top"
-                                    src={work.urlImagen}
-                                    alt={work.titulo}
-                                    onClick={() => handleImageClick(work.urlImagen)}
-                                    style={{ cursor: 'pointer' }}
-                                />
-                                <Card.Body>
-                                    <Card.Title>{work.titulo}</Card.Title>
-                                    <Card.Text>{work.descripcion}</Card.Text>
-                                </Card.Body>
-                                <Card.Footer>
-                                    <small className="text-muted">Realizado el día: {work.fecha}</small>
-                                </Card.Footer>
-                            </Card>
+
+                    {/* Galería de trabajos */}
+                    {filteredWorks.length > 0 ? (
+                        filteredWorks.map(work => (
+                            <Col key={work.id} md={4} className="mb-4">
+                                <Card className="work-item">
+                                    <Card.Img
+                                        variant="top"
+                                        src={work.urlImagen}
+                                        alt={work.titulo}
+                                        onClick={() => handleImageClick(work.urlImagen)}
+                                        style={{ cursor: 'pointer' }}
+                                    />
+                                    <Card.Body>
+                                        <Card.Title>{work.titulo}</Card.Title>
+                                        <Card.Text>{work.descripcion}</Card.Text>
+                                    </Card.Body>
+                                    <Card.Footer>
+                                        <small className="text-muted">Realizado el día: {work.fecha}</small>
+                                    </Card.Footer>
+                                </Card>
+                            </Col>
+                        ))
+                    ) : (
+                        <Col className="text-center">
+                            <p className="no-results-message">No se encontraron trabajos.</p>
                         </Col>
-                    ))}
+                    )}
                 </Row>
             </Container>
 

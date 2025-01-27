@@ -1,40 +1,92 @@
-.all-products-gallery {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 16px;
-    justify-content: center; /* Centra las tarjetas */
-}
-
-.all-products-card {
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    overflow: hidden;
-    transition: transform 0.2s ease-in-out;
-    flex: 1; /* Asegura que las tarjetas ocupen el mismo espacio */
-}
-
-.all-products-card:hover {
-    transform: scale(1.05);
-}
-
-.all-products-card img {
-    width: 100%;
-    height: auto;
-    display: block; /* Asegura que las imágenes no tengan espacio extra debajo */
-}
-
-.mb-4 {
-    margin-bottom: 1.5rem;
-}
-
+/* Estilos para la sección de productos */
 .all-products-section {
-    padding: 20px;
+    padding: 40px 20px; /* Más padding para el contenedor principal */
+    background-color: #4F4D49; /* Fondo negro */
+    border-radius: 8px; /* Bordes redondeados */
+    margin-top: 20px; /* Espacio superior */
 }
 
 .all-products-main {
     text-align: center;
+    margin-bottom: 40px; /* Más espacio inferior */
+}
+/* Estilos para el título */
+h2{
+    color: #AC8936; /* Título dorado */
+    margin-bottom: 20px; /* Espacio inferior */
 }
 
+
 .all-products-search-bar {
+    width: 100%; /* Ancho completo */
     margin-bottom: 1.5rem;
+    background-color: #D7D0C5; /* Fondo avena */
+    color: #4F4D49; /* Texto negro */
+    border: 1px solid #AC8936; /* Borde dorado */
+    border-radius: 4px; /* Bordes redondeados */
+    padding: 10px; /* Padding interno */
+}
+
+.all-products-search-bar::placeholder {
+    color: #4F4D49; /* Color del placeholder */
+}
+
+/* Estilos para la galería de productos */
+.all-products-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px; /* Espacio entre tarjetas */
+    justify-content: center; /* Centra las tarjetas */
+    padding: 20px; /* Padding interno */
+}
+
+/* Estilos para las tarjetas de productos */
+.all-products-card {
+    border: 1px solid #AC8936; /* Borde dorado */
+    border-radius: 8px; /* Bordes redondeados */
+    overflow: hidden;
+    transition: transform 0.2s ease-in-out;
+    background-color: #D7D0C5; /* Fondo avena */
+    color: #4F4D49; /* Texto negro */
+    flex: 1; /* Asegura que las tarjetas ocupen el mismo espacio */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra */
+}
+
+.all-products-card:hover {
+    transform: scale(1.05); /* Efecto de escala al hacer hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Sombra más pronunciada al hacer hover */
+}
+
+.all-products-card img {
+    width: 100%;
+    height: 200px; /* Altura fija para las imágenes */
+    object-fit: cover; /* Asegura que la imagen cubra el espacio sin deformarse */
+    border-radius: 8px 8px 0 0; /* Bordes redondeados solo en la parte superior */
+}
+
+.all-products-card .card-body {
+    padding: 15px; /* Padding interno */
+}
+
+.all-products-card .card-title {
+    color: #AC8936; /* Título dorado */
+    font-size: 1.2rem; /* Tamaño de la fuente */
+    font-weight: bold; /* Texto en negrita */
+}
+
+.all-products-card .card-text {
+    color: #4F4D49; /* Texto negro */
+    font-size: 1rem; /* Tamaño de la fuente */
+}
+
+/* Estilos para el mensaje de "No se encontraron productos" */
+.no-results-message {
+    color: #4F4D49; /* Color del texto */
+    font-size: 1.2rem; /* Tamaño de la fuente */
+    font-weight: bold; /* Texto en negrita */
+    margin-top: 20px; /* Espacio superior */
+    padding: 20px; /* Padding interno */
+    background-color: #D7D0C5; /* Fondo avena */
+    border-radius: 8px; /* Bordes redondeados */
+    border: 1px solid #AC8936; /* Borde dorado */
 }
