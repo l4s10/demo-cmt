@@ -68,3 +68,35 @@
         width: 100%;
     }
 }
+
+
+/* Estilos personalizados para el modal */
+.custom-modal .modal-content {
+    background-color: #D7D0C5; /* Fondo avena */
+    border-radius: 8px;
+    border: 1px solid #AC8936; /* Borde dorado */
+}
+
+.custom-modal .modal-header {
+    background-color: #AC8936; /* Fondo dorado */
+    color: #fff; /* Texto blanco */
+    border-bottom: 1px solid #AC8936;
+}
+
+.custom-modal .modal-body {
+    padding: 20px;
+}
+
+.custom-modal .modal-footer {
+    border-top: 1px solid #AC8936;
+}
+
+.custom-modal .btn-secondary {
+    background-color: #4F4D49; /* Fondo negro */
+    border-color: #4F4D49;
+}
+
+.custom-modal .btn-secondary:hover {
+    background-color: #333; /* Fondo negro más oscuro */
+    border-color: #333;
+}

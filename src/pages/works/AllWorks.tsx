@@ -82,7 +82,7 @@ const AllWorks = () => {
             </Container>
 
             {/* Modal para mostrar la imagen en grande */}
-            <Modal show={showModal} onHide={handleCloseModal} centered>
+            <Modal show={showModal} onHide={handleCloseModal} centered className="custom-modal">
                 <Modal.Header closeButton>
                     <Modal.Title>Imagen del Trabajo</Modal.Title>
                 </Modal.Header>
