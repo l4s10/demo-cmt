@@ -5,7 +5,8 @@ import './App.css'
 import './pages/home/Home.css'
 import Navbar from './components/navbar/Navbar'
 import Home from './pages/home/Home'
-import Products from './pages/products/LandingProducts'
+import Services from './pages/services/Services'
+// import Products from './pages/products/LandingProducts'
 import Works from './pages/works/LandingWorks'
 import Contact from './pages/contact/LandingContact'
 import Footer from './components/footer/Footer'
@@ -20,8 +21,10 @@ function App() {
       <div className='main-content'>
         {/* Llamar al componente Home */}
         <Home/>
-        {/* Llamar al componente Products */}
-        <Products/>
+        {/* Llamar al componente Services */}
+        <Services/>
+        {/* Llamar al componente Products (CAMBIADO POR SERVICIOS) */}
+        {/* <Products/> */}
         {/* Llamar al componenete Works */}
         <Works/>
         {/* Llamar al componente Contact */}
