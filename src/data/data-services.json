@@ -1,0 +1,68 @@
+[
+    {
+        "id": 1,
+        "name": "Cielos Modulares",
+        "description": "Instalación y mantención de cielos modulares para todo tipo de espacios.",
+        "image": "https://placehold.co/600x400?text=Cielos+Modulares",
+        "colors": [
+            { "name": "Blanco", "image": "https://placehold.co/100x100?text=Blanco" },
+            { "name": "Gris", "image": "https://placehold.co/100x100?text=Gris" },
+            { "name": "Negro", "image": "https://placehold.co/100x100?text=Negro" }
+        ]
+    },
+    {
+        "id": 2,
+        "name": "Pisos Vinílicos",
+        "description": "Ofrecemos pisos vinílicos en palmetas y en rollo, ideales para cualquier ambiente.",
+        "image": "https://placehold.co/600x400?text=Pisos+Vinílicos",
+        "colors": [
+            { "name": "Madera", "image": "https://placehold.co/100x100?text=Madera" },
+            { "name": "Gris", "image": "https://placehold.co/100x100?text=Gris" },
+            { "name": "Blanco", "image": "https://placehold.co/100x100?text=Blanco" }
+        ]
+    },
+    {
+        "id": 3,
+        "name": "Pisos Flotantes",
+        "description": "Instalación de pisos flotantes de alta calidad y durabilidad.",
+        "image": "https://placehold.co/600x400?text=Pisos+Flotantes",
+        "colors": [
+            { "name": "Roble", "image": "https://placehold.co/100x100?text=Roble" },
+            { "name": "Nogal", "image": "https://placehold.co/100x100?text=Nogal" },
+            { "name": "Cerezo", "image": "https://placehold.co/100x100?text=Cerezo" }
+        ]
+    },
+    {
+        "id": 4,
+        "name": "Papeles Murales",
+        "description": "Colocación de papeles murales para decorar y personalizar tus paredes.",
+        "image": "https://placehold.co/600x400?text=Papeles+Murales",
+        "colors": [
+            { "name": "Floral", "image": "https://placehold.co/100x100?text=Floral" },
+            { "name": "Geométrico", "image": "https://placehold.co/100x100?text=Geométrico" },
+            { "name": "Liso", "image": "https://placehold.co/100x100?text=Liso" }
+        ]
+    },
+    {
+        "id": 5,
+        "name": "Caucho",
+        "description": "Pisos de caucho en palmetas y in situ, perfectos para áreas de alto tráfico.",
+        "image": "https://placehold.co/600x400?text=Caucho",
+        "colors": [
+            { "name": "Negro", "image": "https://placehold.co/100x100?text=Negro" },
+            { "name": "Rojo", "image": "https://placehold.co/100x100?text=Rojo" },
+            { "name": "Azul", "image": "https://placehold.co/100x100?text=Azul" }
+        ]
+    },
+    {
+        "id": 6,
+        "name": "Cerámico y Porcelanato",
+        "description": "Instalación de cerámico y porcelanato para un acabado elegante y resistente.",
+        "image": "https://placehold.co/600x400?text=Cerámico+y+Porcelanato",
+        "colors": [
+            { "name": "Blanco", "image": "https://placehold.co/100x100?text=Blanco" },
+            { "name": "Gris", "image": "https://placehold.co/100x100?text=Gris" },
+            { "name": "Mármol", "image": "https://placehold.co/100x100?text=Mármol" }
+        ]
+    }
+]
