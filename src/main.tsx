@@ -7,6 +7,7 @@ import AllServices from './pages/services/AllServices.tsx';
 import AllWorks from './pages/works/AllWorks.js'
 import Contact from './pages/contact/Contact.js'
 import InDeveloping from './pages/InDeveloping.tsx';
+import ServiceTest from './pages/services/ServiceTest.tsx';
 
 createRoot(document.getElementById('root')!).render(
     <BrowserRouter>
@@ -16,6 +17,7 @@ createRoot(document.getElementById('root')!).render(
             <Route path="/servicios" element={<AllServices />} />
             <Route path="/trabajos" element={<AllWorks />} />
             <Route path='/contacto' element={<Contact/>} />
+            <Route path='/test' element={<ServiceTest/>} />
         </Routes>
     </BrowserRouter>
 )
