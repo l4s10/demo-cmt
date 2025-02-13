@@ -13,6 +13,10 @@
     font-size: 14px;
 }
 
+.footer .developer-info {
+    margin-top: 10px;
+}
+
 .footer a {
     color: #AC8936; /* Dorado */
     text-decoration: none;
@@ -24,6 +28,6 @@
     color: #D7D0C5; /* Letras avena al pasar el mouse */
 }
 
-.footer i {
+.footer .svg-inline--fa {
     margin-right: 5px; /* Espacio entre el ícono y el texto */
 }
