@@ -1,0 +1,125 @@
+/* Estilos generales de la sección de servicios */
+.all-services-section {
+    padding: 20px;
+}
+
+.all-services-main {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.all-services-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* Estilos de las tarjetas de servicios */
+.service-item {
+    text-align: center;
+    overflow: hidden;
+    transition: transform 0.2s ease-in-out;
+    flex: 1; /* Asegura que las tarjetas ocupen el mismo espacio */
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 10px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+
+.service-item:hover {
+    transform: scale(1.05);
+}
+
+.service-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 8px;
+}
+
+.mb-4 {
+    margin-bottom: 1.5rem;
+}
+
+/* Estilos personalizados para el modal */
+.custom-modal .modal-content {
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    border: 1px solid #AC8936;
+}
+
+.custom-modal .modal-header {
+    background-color: #AC8936;
+    color: #fff;
+    border-bottom: 1px solid #AC8936;
+}
+
+.custom-modal .modal-body {
+    padding: 20px;
+    max-height: 60vh;
+    overflow-y: auto;
+}
+
+.custom-modal .modal-footer {
+    border-top: 1px solid #AC8936;
+    padding: 15px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.custom-modal .btn-secondary {
+    background-color: #4F4D49;
+    border-color: #4F4D49;
+}
+
+.custom-modal .btn-secondary:hover {
+    background-color: #333;
+    border-color: #333;
+}
+
+/* Estilos para las imágenes y texto dentro del modal */
+.custom-modal .modal-body img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+    border-radius: 8px;
+}
+
+.custom-modal .modal-body p {
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+.custom-modal .modal-body .color-item {
+    text-align: center;
+}
+
+.custom-modal .modal-body .color-item img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    margin-bottom: 10px;
+    border-radius: 8px;
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+    .custom-modal .modal-dialog {
+        max-width: 90%;
+    }
+
+    .custom-modal .modal-body .col {
+        flex: 1 1 100%;
+        max-width: 100%;
+    }
+
+    .custom-modal .modal-body img {
+        margin-bottom: 15px;
+    }
+
+    .custom-modal .modal-body p {
+        margin-bottom: 15px;
+    }
+}

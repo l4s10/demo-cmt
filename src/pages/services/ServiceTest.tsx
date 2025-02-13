@@ -2,7 +2,8 @@ import React, { useState } from 'react';
 import { Container, Row, Col, Card, Modal, Button } from 'react-bootstrap';
 import servicesData from '../../data/data-services.json';
 import NavBar from '../../components/navbar/Navbar';
-import '../services/Services.css';
+import './AllServices.css';
+import Footer from '../../components/footer/Footer';
 
 const ServiceTest: React.FC = () => {
     const [showModal, setShowModal] = useState(false);
@@ -43,18 +44,39 @@ const ServiceTest: React.FC = () => {
             </Container>
 
             {selectedService && (
-                <Modal show={showModal} onHide={handleCloseModal} centered className="custom-modal">
+                <Modal show={showModal} onHide={handleCloseModal} centered className="custom-modal modal-xl">
                     <Modal.Header closeButton>
                         <Modal.Title>{selectedService.name}</Modal.Title>
                     </Modal.Header>
                     <Modal.Body>
-                        <img src={selectedService.image} alt={selectedService.name} className="img-fluid mb-3" />
-                        <p>{selectedService.description}</p>
+                        {/* Contenedor principal con dos columnas */}
+                        <Row>
+                            {/* Columna izquierda para la imagen */}
+                            <Col md={6} className="mb-3">
+                                <img 
+                                    src={selectedService.image} 
+                                    alt={selectedService.name} 
+                                    className="img-fluid rounded" 
+                                />
+                            </Col>
+                
+                            {/* Columna derecha para la descripción */}
+                            <Col md={6} className="mb-3">
+                                <p>{selectedService.description}</p>
+                                <p>{selectedService.descriptionLong}</p>
+                            </Col>
+                        </Row>
+                
+                        {/* Sección de colores disponibles */}
                         <h5>Colores disponibles:</h5>
                         <Row>
                             {selectedService.colors.map((color: any, index: number) => (
-                                <Col key={index} xs={4} className="mb-3">
-                                    <img src={color.image} alt={color.name} className="img-fluid" />
+                                <Col key={index} xs={12} sm={6} md={4} className="mb-3 color-item">
+                                    <img 
+                                        src={color.image} 
+                                        alt={color.name} 
+                                        className="img-fluid rounded" 
+                                    />
                                     <p>{color.name}</p>
                                 </Col>
                             ))}
@@ -67,6 +89,9 @@ const ServiceTest: React.FC = () => {
                     </Modal.Footer>
                 </Modal>
             )}
+
+            {/* Footer */}
+            <Footer/>
         </>
     );
 };

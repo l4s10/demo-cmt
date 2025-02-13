@@ -3,6 +3,7 @@
         "id": 1,
         "name": "Cielos Modulares",
         "description": "Instalación y mantención de cielos modulares para todo tipo de espacios.",
+        "descriptionLong": "Los cielos modulares son una solución moderna y versátil para techos interiores. Están compuestos por paneles modulares que se adaptan a cualquier espacio, ofreciendo aislamiento acústico y térmico. Ideales para oficinas, hogares y locales comerciales, estos cielos son fáciles de instalar y mantener, y están disponibles en una variedad de colores y texturas para complementar cualquier diseño.",
         "image": "https://placehold.co/600x400?text=Cielos+Modulares",
         "colors": [
             { "name": "Blanco", "image": "https://placehold.co/100x100?text=Blanco" },
@@ -14,6 +15,7 @@
         "id": 2,
         "name": "Pisos Vinílicos",
         "description": "Ofrecemos pisos vinílicos en palmetas y en rollo, ideales para cualquier ambiente.",
+        "descriptionLong": "Los pisos vinílicos son una opción popular debido a su durabilidad, resistencia al agua y facilidad de mantenimiento. Disponibles en una amplia gama de diseños que imitan madera, piedra y otros materiales, son perfectos para áreas como cocinas, baños y espacios comerciales. Su instalación es rápida y pueden colocarse sobre superficies existentes, lo que los hace una opción económica y versátil.",
         "image": "https://placehold.co/600x400?text=Pisos+Vinílicos",
         "colors": [
             { "name": "Madera", "image": "https://placehold.co/100x100?text=Madera" },
@@ -25,6 +27,7 @@
         "id": 3,
         "name": "Pisos Flotantes",
         "description": "Instalación de pisos flotantes de alta calidad y durabilidad.",
+        "descriptionLong": "Los pisos flotantes son una excelente opción para quienes buscan un acabado similar a la madera sin el costo elevado. Compuestos por varias capas, incluyendo una base de fibra de alta densidad y una superficie decorativa, son resistentes al desgaste y fáciles de instalar. Ideales para hogares y oficinas, ofrecen calidez y elegancia con un mantenimiento mínimo.",
         "image": "https://placehold.co/600x400?text=Pisos+Flotantes",
         "colors": [
             { "name": "Roble", "image": "https://placehold.co/100x100?text=Roble" },
@@ -36,6 +39,7 @@
         "id": 4,
         "name": "Papeles Murales",
         "description": "Colocación de papeles murales para decorar y personalizar tus paredes.",
+        "descriptionLong": "Los papeles murales son una forma creativa de transformar cualquier espacio. Disponibles en una variedad de diseños, desde patrones florales hasta geométricos y texturas modernas, permiten personalizar paredes de manera única. Son ideales para destacar una pared principal en salas de estar, dormitorios o locales comerciales. Fáciles de aplicar y reemplazar, ofrecen un cambio de look rápido y efectivo.",
         "image": "https://placehold.co/600x400?text=Papeles+Murales",
         "colors": [
             { "name": "Floral", "image": "https://placehold.co/100x100?text=Floral" },
@@ -47,6 +51,7 @@
         "id": 5,
         "name": "Caucho",
         "description": "Pisos de caucho en palmetas y in situ, perfectos para áreas de alto tráfico.",
+        "descriptionLong": "Los pisos de caucho son conocidos por su durabilidad, resistencia al impacto y propiedades antideslizantes. Ideales para gimnasios, áreas infantiles y espacios industriales, ofrecen una superficie cómoda y segura. Además, son fáciles de limpiar y resistentes a la humedad, lo que los hace perfectos para áreas de alto tráfico y uso intensivo.",
         "image": "https://placehold.co/600x400?text=Caucho",
         "colors": [
             { "name": "Negro", "image": "https://placehold.co/100x100?text=Negro" },
@@ -58,6 +63,7 @@
         "id": 6,
         "name": "Cerámico y Porcelanato",
         "description": "Instalación de cerámico y porcelanato para un acabado elegante y resistente.",
+        "descriptionLong": "El cerámico y porcelanato son materiales de alta resistencia y durabilidad, ideales para pisos y paredes en áreas como cocinas, baños y exteriores. El porcelanato, en particular, es más denso y menos poroso que el cerámico tradicional, lo que lo hace más resistente a manchas y desgaste. Disponible en una amplia variedad de diseños, incluyendo imitaciones de mármol y madera, ofrece un acabado sofisticado y fácil de mantener.",
         "image": "https://placehold.co/600x400?text=Cerámico+y+Porcelanato",
         "colors": [
             { "name": "Blanco", "image": "https://placehold.co/100x100?text=Blanco" },
