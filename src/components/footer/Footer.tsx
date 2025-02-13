@@ -8,7 +8,9 @@ const Footer = () => {
         <footer className="footer">
             <p>© {currentYear} CMT Terminaciones</p>
             {/* Enlace al LinkedIn del desarrollador */}
-            <a href="https://www.linkedin.com/in/franciscomv2001dev" target="_blank" rel="noreferrer">Desarrollado por Francisco Muñoz</a>
+            <a href="https://www.linkedin.com/in/franciscomv2001dev" target="_blank" rel="noreferrer">
+                <i className="fab fa-linkedin"></i> Desarrollado por Francisco Muñoz
+            </a>
         </footer>
     );
 }
