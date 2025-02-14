@@ -3,6 +3,7 @@
         "id": 1,
         "titulo": "Trabajo 1",
         "descripcion": "Descripción de trabajo 1",
+        "longDescription": "Este trabajo consistió en la instalación de un sistema de techos modulares en una oficina corporativa. Se utilizaron materiales de alta calidad para asegurar la durabilidad y el aislamiento acústico.",
         "urlImagen": "/images/trabajos/trabajo1.jpeg",
         "fecha": "13-01-2025"
     },
@@ -10,6 +11,7 @@
         "id": 2,
         "titulo": "Trabajo 2",
         "descripcion": "Descripción de trabajo 2",
+        "longDescription": "En este proyecto, se realizó la instalación de pisos vinílicos en una cocina y un baño. Los pisos vinílicos son resistentes al agua y fáciles de mantener, lo que los hace ideales para estas áreas.",
         "urlImagen": "/images/trabajos/trabajo2.jpeg",
         "fecha": "14-02-2025"
     },
@@ -17,6 +19,7 @@
         "id": 3,
         "titulo": "Trabajo 3",
         "descripcion": "Descripción de trabajo 3",
+        "longDescription": "Este trabajo incluyó la instalación de pisos flotantes en una sala de estar. Los pisos flotantes ofrecen un acabado elegante y son fáciles de instalar sobre superficies existentes.",
         "urlImagen": "/images/trabajos/trabajo3.jpeg",
         "fecha": "15-03-2025"
     },
@@ -24,6 +27,7 @@
         "id": 4,
         "titulo": "Trabajo 4",
         "descripcion": "Descripción de trabajo 4",
+        "longDescription": "Se realizó la colocación de papeles murales en una habitación infantil. Los papeles murales seleccionados tienen diseños coloridos y divertidos que transformaron el espacio.",
         "urlImagen": "/images/trabajos/trabajo4.jpeg",
         "fecha": "16-04-2025"
     },
@@ -31,6 +35,7 @@
         "id": 5,
         "titulo": "Trabajo 5",
         "descripcion": "Descripción de trabajo 5",
+        "longDescription": "Este proyecto consistió en la instalación de pisos de caucho en un gimnasio. Los pisos de caucho son ideales para áreas de alto tráfico debido a su durabilidad y resistencia.",
         "urlImagen": "/images/trabajos/trabajo5.jpeg",
         "fecha": "17-05-2025"
     },
@@ -38,6 +43,7 @@
         "id": 6,
         "titulo": "Trabajo 6",
         "descripcion": "Descripción de trabajo 6",
+        "longDescription": "Se realizó la instalación de cerámico y porcelanato en un baño. Estos materiales ofrecen un acabado elegante y son resistentes al agua, lo que los hace perfectos para áreas húmedas.",
         "urlImagen": "/images/trabajos/trabajo6.jpeg",
         "fecha": "18-06-2025"
     },
@@ -45,6 +51,7 @@
         "id": 7,
         "titulo": "Trabajo 7",
         "descripcion": "Descripción de trabajo 7",
+        "longDescription": "Este trabajo incluyó la instalación de techos modulares en una sala de conferencias. Los techos modulares proporcionan un excelente aislamiento acústico, mejorando la calidad del sonido en la sala.",
         "urlImagen": "/images/trabajos/trabajo7.jpeg",
         "fecha": "19-07-2025"
     },
@@ -52,6 +59,7 @@
         "id": 8,
         "titulo": "Trabajo 8",
         "descripcion": "Descripción de trabajo 8",
+        "longDescription": "Se realizó la instalación de pisos vinílicos en una oficina. Los pisos vinílicos son duraderos y fáciles de mantener, lo que los hace ideales para espacios de trabajo.",
         "urlImagen": "/images/trabajos/trabajo8.jpeg",
         "fecha": "20-08-2025"
     },
@@ -59,6 +67,7 @@
         "id": 9,
         "titulo": "Trabajo 9",
         "descripcion": "Descripción de trabajo 9",
+        "longDescription": "Este proyecto consistió en la instalación de pisos flotantes en un dormitorio. Los pisos flotantes ofrecen un acabado cálido y acogedor, transformando el ambiente de la habitación.",
         "urlImagen": "/images/trabajos/trabajo9.jpeg",
         "fecha": "21-09-2025"
     },
@@ -66,6 +75,7 @@
         "id": 10,
         "titulo": "Trabajo 10",
         "descripcion": "Descripción de trabajo 10",
+        "longDescription": "Se realizó la colocación de papeles murales en una sala de estar. Los papeles murales seleccionados tienen diseños elegantes que complementan la decoración del espacio.",
         "urlImagen": "/images/trabajos/trabajo10.jpeg",
         "fecha": "22-10-2025"
     },
@@ -73,6 +83,7 @@
         "id": 11,
         "titulo": "Trabajo 11",
         "descripcion": "Descripción de trabajo 11",
+        "longDescription": "Este trabajo incluyó la instalación de pisos de caucho en un área de juegos para niños. Los pisos de caucho son seguros y duraderos, proporcionando una superficie ideal para los niños.",
         "urlImagen": "/images/trabajos/trabajo11.jpeg",
         "fecha": "23-11-2025"
     },
@@ -80,6 +91,7 @@
         "id": 12,
         "titulo": "Trabajo 12",
         "descripcion": "Descripción de trabajo 12",
+        "longDescription": "Se realizó la instalación de cerámico y porcelanato en una cocina. Estos materiales son resistentes al calor y fáciles de limpiar, lo que los hace perfectos para áreas de cocina.",
         "urlImagen": "/images/trabajos/trabajo12.jpeg",
         "fecha": "24-12-2025"
     }
