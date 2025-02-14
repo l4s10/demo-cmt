@@ -1,6 +1,15 @@
 /* Estilos generales de la sección de servicios */
 .all-services-section {
-    padding: 20px;
+    background-color: #4F4D49; /* Fondo negro */
+    padding: 20px; /* Padding interno */
+    border-radius: 8px; /* Bordes redondeados */
+    margin:  30px auto; /* Espacio superior */
+    min-height: calc(100vh - 60px); /* Asegura que la sección ocupe toda la pantalla */
+}
+
+h2{
+    color: #AC8936;
+    margin-bottom: 20px;
 }
 
 .all-services-main {
@@ -122,4 +131,65 @@
     .custom-modal .modal-body p {
         margin-bottom: 15px;
     }
+}
+
+/* Estilos para la barra de búsqueda */
+.all-services-search-bar {
+    background-color: #fff; /* Fondo avena */
+    color: #4F4D49; /* Texto negro */
+    border: 1px solid #AC8936; /* Borde dorado */
+    border-radius: 4px; /* Bordes redondeados */
+    padding: 10px; /* Padding interno */
+    width: 100%; /* Ancho completo */
+    margin-bottom: 20px; /* Espacio inferior */
+}
+
+.all-services-search-bar::placeholder {
+    color: #4F4D49; /* Color del placeholder */
+}
+
+/* Estilos para autocompletado/sugerencias */
+.suggestions-container {
+    position: relative;
+    width: 100%; /* Asegura que el contenedor ocupe el mismo ancho que la barra de búsqueda */
+}
+
+.suggestions-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    border: 1px solid #AC8936; /* Borde dorado */
+    border-radius: 4px;
+    max-height: 150px;
+    overflow-y: auto;
+    position: absolute;
+    top: 100%; /* Coloca la lista debajo de la barra de búsqueda */
+    left: 0;
+    right: 0;
+    background-color: #D7D0C5; /* Fondo avena */
+    z-index: 1000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para un mejor aspecto */
+}
+
+.suggestion-item {
+    padding: 8px 12px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    color: #4F4D49; /* Texto negro */
+}
+
+.suggestion-item:hover {
+    background-color: #f8f9fa; /* Fondo gris claro al hacer hover */
+}
+
+/* Estilos para el mensaje de "No se encontraron trabajos" */
+.no-results-message {
+    color: #4F4D49; /* Color del texto */
+    font-size: 1.2rem; /* Tamaño de la fuente */
+    font-weight: bold; /* Texto en negrita */
+    margin-top: 20px; /* Espacio superior */
+    padding: 20px; /* Padding interno */
+    background-color: #D7D0C5; /* Fondo avena */
+    border-radius: 8px; /* Bordes redondeados */
+    border: 1px solid #AC8936; /* Borde dorado */
 }

@@ -30,8 +30,8 @@ function App() {
         {/* Llamar al componente Contact */}
         <Contact/>
         {/* LLamar al footer */}
-        <Footer/>
       </div>
+      <Footer/>
     </>
   )
 }

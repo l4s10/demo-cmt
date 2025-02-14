@@ -1,60 +1,47 @@
-/* Estilos para la sección de todos los trabajos */
 .all-works-section {
-    padding: 20px;
-}
-
-.all-works-gallery {
     background-color: #4F4D49; /* Fondo negro */
     padding: 20px; /* Padding interno */
     border-radius: 8px; /* Bordes redondeados */
-    margin-top: 20px; /* Espacio superior */
+    margin:  30px auto; /* Espacio superior */
+    min-height: calc(100vh - 60px); /* Asegura que la sección ocupe toda la pantalla */
 }
 
-/* Estilos para el título */
-.all-works-gallery h2 {
-    color: #AC8936; /* Título dorado */
-    margin-bottom: 20px; /* Espacio inferior */
+.all-works-main {
+    text-align: center;
+    margin-bottom: 20px;
 }
 
-/* Estilos para la barra de búsqueda */
-.all-works-search-bar {
-    background-color: #D7D0C5; /* Fondo avena */
-    color: #4F4D49; /* Texto negro */
-    border: 1px solid #AC8936; /* Borde dorado */
-    border-radius: 4px; /* Bordes redondeados */
-    padding: 10px; /* Padding interno */
-    width: 100%; /* Ancho completo */
-    margin-bottom: 20px; /* Espacio inferior */
+.all-works-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
-.all-works-search-bar::placeholder {
-    color: #4F4D49; /* Color del placeholder */
-}
-
-/* Estilos para las tarjetas de trabajos */
 .work-item {
-    background-color: #D7D0C5; /* Fondo avena */
-    color: #4F4D49; /* Texto negro */
-    border: 1px solid #AC8936; /* Borde dorado */
-    border-radius: 8px; /* Bordes redondeados */
-    padding: 10px; /* Padding interno */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra */
+    text-align: center;
+    overflow: hidden;
     transition: transform 0.2s ease-in-out;
+    flex: 1; /* Asegura que las tarjetas ocupen el mismo espacio */
+    border: 1px solid #ddd; /* Añadir borde */
+    border-radius: 8px; /* Añadir borde redondeado */
+    padding: 10px; /* Añadir padding */
+    background-color: #fff; /* Fondo blanco */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Añadir sombra */
 }
 
 .work-item:hover {
-    transform: scale(1.05); /* Efecto de escala al hacer hover */
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Sombra más pronunciada al hacer hover */
+    transform: scale(1.05);
 }
 
-.work-item .card-title {
-    color: #AC8936; /* Título dorado */
+.work-item img {
+    width: 100%;
+    height: auto;
+    display: block; /* Asegura que las imágenes no tengan espacio extra debajo */
+    border-radius: 8px; /* Añadir borde redondeado a la imagen */
 }
 
-.work-item .card-footer {
-    background-color: #AC8936; /* Fondo dorado */
-    color: #D7D0C5; /* Texto avena */
-    border-top: 1px solid #AC8936; /* Borde superior dorado */
+.mb-4 {
+    margin-bottom: 1.5rem;
 }
 
 /* Estilos para el mensaje de "No se encontraron trabajos" */
@@ -67,21 +54,6 @@
     background-color: #D7D0C5; /* Fondo avena */
     border-radius: 8px; /* Bordes redondeados */
     border: 1px solid #AC8936; /* Borde dorado */
-}
-.work-item img {
-    width: 100%;
-    height: 300px;
-    object-fit: cover;
-    border-radius: 8px;
-}
-
-@media (max-width: 768px) {
-    .work-item {
-        flex: 1 1 100%;
-    }
-}
-.mb-4 {
-    margin-bottom: 1.5rem;
 }
 
 /* Estilos personalizados para el modal */
@@ -113,4 +85,49 @@
 .custom-modal .btn-secondary:hover {
     background-color: #333; /* Fondo negro más oscuro */
     border-color: #333;
+}
+
+/* Estilos para la barra de búsqueda */
+.all-works-search-bar {
+    background-color: #fff; /* Fondo avena */
+    color: #4F4D49; /* Texto negro */
+    border: 1px solid #AC8936; /* Borde dorado */
+    border-radius: 4px; /* Bordes redondeados */
+    padding: 10px; /* Padding interno */
+    width: 100%; /* Ancho completo */
+    margin-bottom: 20px; /* Espacio inferior */
+}
+
+/* Estilos para autocompletado/sugerencias */
+.suggestions-container {
+    position: relative;
+    width: 100%; /* Asegura que el contenedor ocupe el mismo ancho que la barra de búsqueda */
+}
+
+.suggestions-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    border: 1px solid #AC8936; /* Borde dorado */
+    border-radius: 4px;
+    max-height: 150px;
+    overflow-y: auto;
+    position: absolute;
+    top: 100%; /* Coloca la lista debajo de la barra de búsqueda */
+    left: 0;
+    right: 0;
+    background-color: #D7D0C5; /* Fondo avena */
+    z-index: 1000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para un mejor aspecto */
+}
+
+.suggestion-item {
+    padding: 8px 12px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    color: #4F4D49; /* Texto negro */
+}
+
+.suggestion-item:hover {
+    background-color: #f8f9fa; /* Fondo gris claro al hacer hover */
 }
